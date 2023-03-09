@@ -12,3 +12,26 @@
   --color-text: #81AFDD;
   --color-subtext: #FF8A71;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--gradient-text);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background:  var(--color-bg);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-subtext);
+    border-radius: 3px;
+    width: 14px;
+  
+  }
